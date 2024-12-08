@@ -111,6 +111,9 @@ public class si extends javax.swing.JFrame {
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
+        PLTenencias = new javax.swing.JPanel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
@@ -796,37 +799,18 @@ public class si extends javax.swing.JFrame {
                 PLautosMouseExited(evt);
             }
         });
+        PLautos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/car (1).png"))); // NOI18N
+        PLautos.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, 50));
 
         jLabel21.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(255, 255, 255));
         jLabel21.setText("Vehiculos");
         jLabel21.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        PLautos.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 0, 116, 60));
 
-        javax.swing.GroupLayout PLautosLayout = new javax.swing.GroupLayout(PLautos);
-        PLautos.setLayout(PLautosLayout);
-        PLautosLayout.setHorizontalGroup(
-            PLautosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PLautosLayout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jLabel20)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        PLautosLayout.setVerticalGroup(
-            PLautosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PLautosLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(PLautosLayout.createSequentialGroup()
-                .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-
-        PanelLateral.add(PLautos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 310, 60));
+        PanelLateral.add(PLautos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 310, 60));
 
         PLusuario.setBackground(new java.awt.Color(40, 40, 40));
         PLusuario.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -910,6 +894,34 @@ public class si extends javax.swing.JFrame {
         jLabel28.setText("_____________________");
         jLabel28.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         PanelLateral.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 210, 40));
+
+        PLTenencias.setBackground(new java.awt.Color(40, 40, 40));
+        PLTenencias.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                PLTenenciasMouseMoved(evt);
+            }
+        });
+        PLTenencias.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PLTenenciasMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                PLTenenciasMouseExited(evt);
+            }
+        });
+        PLTenencias.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/atm.png"))); // NOI18N
+        PLTenencias.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 0, 40, 60));
+
+        jLabel29.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel29.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel29.setText("Tenencias");
+        jLabel29.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        PLTenencias.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, 116, 20));
+
+        PanelLateral.add(PLTenencias, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 290, 310, 60));
 
         jPanel1.add(PanelLateral, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 280, 750));
 
@@ -1518,6 +1530,18 @@ public class si extends javax.swing.JFrame {
         JVentas.setVisible(rootPaneCheckingEnabled);
     }//GEN-LAST:event_btnVentaMouseClicked
 
+    private void PLTenenciasMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PLTenenciasMouseMoved
+        PLTenencias.setBackground(new Color(60,60,60));
+    }//GEN-LAST:event_PLTenenciasMouseMoved
+
+    private void PLTenenciasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PLTenenciasMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PLTenenciasMouseClicked
+
+    private void PLTenenciasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PLTenenciasMouseExited
+        PLTenencias.setBackground(new Color(40,40,40));
+    }//GEN-LAST:event_PLTenenciasMouseExited
+
     /**
      * @param args the command line arguments
      */
@@ -1560,6 +1584,7 @@ public class si extends javax.swing.JFrame {
     private javax.swing.JDialog JConsulta_Documentacion;
     private javax.swing.JDialog JRegistroCliente;
     private javax.swing.JDialog JVentas;
+    private javax.swing.JPanel PLTenencias;
     private javax.swing.JPanel PLautos;
     private javax.swing.JPanel PLsalir;
     private javax.swing.JPanel PLusuario;
@@ -1605,7 +1630,9 @@ public class si extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel42;
