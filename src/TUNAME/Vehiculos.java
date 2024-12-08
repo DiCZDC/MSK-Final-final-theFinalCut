@@ -456,9 +456,14 @@ public class Vehiculos extends javax.swing.JFrame {
         btnCancelarV.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/paper.png"))); // NOI18N
         btnCancelarV.setText("Cancelar");
         btnCancelarV.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCancelarV.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnCancelarVMouseClicked(evt);
+            }
+        });
         jPanel3.add(btnCancelarV, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 240, 120, 60));
 
-        JVentas.getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-1, 6, 1270, 631));
+        JVentas.getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-1, 6, 1020, 430));
 
         JRegistroCliente.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -1369,7 +1374,7 @@ public class Vehiculos extends javax.swing.JFrame {
     }//GEN-LAST:event_PLTenenciasMouseExited
 
     private void btnVentaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVentaMouseClicked
-        JVentas.setSize(1269,637);
+        JVentas.setSize(1019, 436);
         JVentas.setLocationRelativeTo(null);
 
         JVentas.setVisible(rootPaneCheckingEnabled);
@@ -1556,6 +1561,10 @@ public class Vehiculos extends javax.swing.JFrame {
     private void txtNombreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtNombreMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNombreMouseClicked
+
+    private void btnCancelarVMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCancelarVMouseClicked
+       JVentas.dispose();
+    }//GEN-LAST:event_btnCancelarVMouseClicked
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
