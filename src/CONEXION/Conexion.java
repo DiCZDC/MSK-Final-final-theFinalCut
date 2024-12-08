@@ -9,7 +9,7 @@ public class Conexion {
     public static Connection conectar() {
         try {
 
-            Connection cn = DriverManager.getConnection("jdbc:postgresql://localhost/DriveLux", "postgres", "password");
+            Connection cn = DriverManager.getConnection("jdbc:postgresql://localhost/msk-database", "postgres","password");
             return cn;
 
         } catch (SQLException e) {
