@@ -19,6 +19,9 @@ public class si extends javax.swing.JFrame {
      */
     public si() {
         initComponents();
+        
+        
+       
     }
 
     /**
@@ -97,7 +100,7 @@ public class si extends javax.swing.JFrame {
         btnEditarCliente = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         PanelSaludo = new javax.swing.JPanel();
-        lblTextoMorado = new javax.swing.JLabel();
+        lblSaludito = new javax.swing.JLabel();
         jLabel58 = new javax.swing.JLabel();
         PanelLateral = new javax.swing.JPanel();
         PLautos = new javax.swing.JPanel();
@@ -114,7 +117,16 @@ public class si extends javax.swing.JFrame {
         PLTenencias = new javax.swing.JPanel();
         jLabel27 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        PNVentanas = new javax.swing.JTabbedPane();
+        PLVehiculos = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
+        btnVenta = new javax.swing.JLabel();
+        btnDocumentacionC = new javax.swing.JLabel();
+        btnAgregar = new javax.swing.JLabel();
+        btnDocumentacion = new javax.swing.JLabel();
+        btnEditar = new javax.swing.JLabel();
+        pnCrudVehiculos = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
         txtModelo = new javax.swing.JTextField();
@@ -127,14 +139,22 @@ public class si extends javax.swing.JFrame {
         jLabel36 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
         cboDescuento = new javax.swing.JComboBox<>();
+        jLabel38 = new javax.swing.JLabel();
+        cboTenencia = new javax.swing.JComboBox<>();
         jScrollPane4 = new javax.swing.JScrollPane();
         TablaVehiculos = new javax.swing.JTable();
-        jLabel1 = new javax.swing.JLabel();
-        btnVenta = new javax.swing.JLabel();
-        btnDocumentacionC = new javax.swing.JLabel();
-        btnAgregar = new javax.swing.JLabel();
-        btnDocumentacion = new javax.swing.JLabel();
-        btnEditar = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        cboDia = new javax.swing.JComboBox<>();
+        jLabel40 = new javax.swing.JLabel();
+        cboMes = new javax.swing.JComboBox<>();
+        cboAnio = new javax.swing.JComboBox<>();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        PLTenencias_2 = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        TablaTenencias = new javax.swing.JTable();
+        jButton2 = new javax.swing.JButton();
 
         JAgragar_Documentacion.setResizable(false);
         JAgragar_Documentacion.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -766,12 +786,12 @@ public class si extends javax.swing.JFrame {
         PanelSaludo.setBackground(new java.awt.Color(75, 75, 75));
         PanelSaludo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblTextoMorado.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        lblTextoMorado.setForeground(new java.awt.Color(255, 255, 255));
-        lblTextoMorado.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblTextoMorado.setText("¡Bienvenido de Vuelta!");
-        lblTextoMorado.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        PanelSaludo.add(lblTextoMorado, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1290, -1));
+        lblSaludito.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lblSaludito.setForeground(new java.awt.Color(255, 255, 255));
+        lblSaludito.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblSaludito.setText("¡Bienvenido de Vuelta!");
+        lblSaludito.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        PanelSaludo.add(lblSaludito, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1290, -1));
 
         jLabel58.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel58.setForeground(new java.awt.Color(255, 255, 255));
@@ -780,7 +800,7 @@ public class si extends javax.swing.JFrame {
         jLabel58.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         PanelSaludo.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 1290, 40));
 
-        jPanel1.add(PanelSaludo, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 40, 1520, 100));
+        jPanel1.add(PanelSaludo, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 50, 1520, 100));
 
         PanelLateral.setBackground(new java.awt.Color(25, 25, 25));
         PanelLateral.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -925,15 +945,79 @@ public class si extends javax.swing.JFrame {
 
         jPanel1.add(PanelLateral, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 280, 750));
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Hecho con ♥");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 0, 1300, 50));
+
+        PLVehiculos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnVenta.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnVenta.setForeground(new java.awt.Color(25, 25, 25));
+        btnVenta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/new-car.png"))); // NOI18N
+        btnVenta.setText(" Vender");
+        btnVenta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnVenta.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnVentaMouseClicked(evt);
+            }
+        });
+        jPanel2.add(btnVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 330, 120, 60));
+
+        btnDocumentacionC.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnDocumentacionC.setForeground(new java.awt.Color(25, 25, 25));
+        btnDocumentacionC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/search.png"))); // NOI18N
+        btnDocumentacionC.setText("  Consultar Documentacion");
+        btnDocumentacionC.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnDocumentacionC.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnDocumentacionCMouseClicked(evt);
+            }
+        });
+        jPanel2.add(btnDocumentacionC, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 330, 270, 60));
+
+        btnAgregar.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnAgregar.setForeground(new java.awt.Color(25, 25, 25));
+        btnAgregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/rental-car.png"))); // NOI18N
+        btnAgregar.setText("  Agregar");
+        btnAgregar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(btnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 330, 130, 60));
+
+        btnDocumentacion.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnDocumentacion.setForeground(new java.awt.Color(25, 25, 25));
+        btnDocumentacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/checklist.png"))); // NOI18N
+        btnDocumentacion.setText("  Agregar Documentacion");
+        btnDocumentacion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnDocumentacion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnDocumentacionMouseClicked(evt);
+            }
+        });
+        jPanel2.add(btnDocumentacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 500, 270, 60));
+
+        btnEditar.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnEditar.setForeground(new java.awt.Color(25, 25, 25));
+        btnEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/mechanical.png"))); // NOI18N
+        btnEditar.setText(" Editar");
+        btnEditar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(btnEditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 330, 100, 60));
+
+        pnCrudVehiculos.setBackground(new java.awt.Color(255, 255, 255));
+        pnCrudVehiculos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/car-wash.png"))); // NOI18N
+        pnCrudVehiculos.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(86, 6, 70, -1));
 
         jLabel42.setBackground(new java.awt.Color(25, 25, 25));
         jLabel42.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel42.setForeground(new java.awt.Color(25, 25, 25));
         jLabel42.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel42.setText("Vehiculos");
+        pnCrudVehiculos.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 82, 240, 30));
 
         txtModelo.setForeground(new java.awt.Color(153, 153, 153));
         txtModelo.setText("Modelo");
@@ -949,6 +1033,7 @@ public class si extends javax.swing.JFrame {
                 txtModeloKeyTyped(evt);
             }
         });
+        pnCrudVehiculos.add(txtModelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 118, 240, 30));
 
         txtVariante.setForeground(new java.awt.Color(153, 153, 153));
         txtVariante.setText("Variante");
@@ -969,6 +1054,7 @@ public class si extends javax.swing.JFrame {
                 txtVarianteKeyTyped(evt);
             }
         });
+        pnCrudVehiculos.add(txtVariante, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 240, 30));
 
         txtAnio.setForeground(new java.awt.Color(153, 153, 153));
         txtAnio.setText("Año");
@@ -989,9 +1075,10 @@ public class si extends javax.swing.JFrame {
                 txtAnioKeyTyped(evt);
             }
         });
+        pnCrudVehiculos.add(txtAnio, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 202, 240, 30));
 
         txtColor.setForeground(new java.awt.Color(153, 153, 153));
-        txtColor.setText("Color");
+        txtColor.setText("Kilometraje");
         txtColor.setSelectedTextColor(new java.awt.Color(204, 204, 204));
         txtColor.setSelectionColor(new java.awt.Color(75, 75, 75));
         txtColor.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1009,9 +1096,10 @@ public class si extends javax.swing.JFrame {
                 txtColorKeyTyped(evt);
             }
         });
+        pnCrudVehiculos.add(txtColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 244, 240, 30));
 
         txtKilometraje.setForeground(new java.awt.Color(153, 153, 153));
-        txtKilometraje.setText("Kilometraje");
+        txtKilometraje.setText("Precio de Compra");
         txtKilometraje.setSelectedTextColor(new java.awt.Color(204, 204, 204));
         txtKilometraje.setSelectionColor(new java.awt.Color(75, 75, 75));
         txtKilometraje.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1029,9 +1117,10 @@ public class si extends javax.swing.JFrame {
                 txtKilometrajeKeyTyped(evt);
             }
         });
+        pnCrudVehiculos.add(txtKilometraje, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 286, 240, 30));
 
         txtPrecio.setForeground(new java.awt.Color(153, 153, 153));
-        txtPrecio.setText("Precio");
+        txtPrecio.setText("Precio de Venta");
         txtPrecio.setSelectedTextColor(new java.awt.Color(204, 204, 204));
         txtPrecio.setSelectionColor(new java.awt.Color(75, 75, 75));
         txtPrecio.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1049,6 +1138,7 @@ public class si extends javax.swing.JFrame {
                 txtPrecioKeyTyped(evt);
             }
         });
+        pnCrudVehiculos.add(txtPrecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 328, 240, 30));
 
         cboGasolina.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Regular", "Premium", "Diésel", "Etanol (E85)", "Electrico" }));
         cboGasolina.addActionListener(new java.awt.event.ActionListener() {
@@ -1056,10 +1146,13 @@ public class si extends javax.swing.JFrame {
                 cboGasolinaActionPerformed(evt);
             }
         });
+        pnCrudVehiculos.add(cboGasolina, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 400, -1, -1));
 
         jLabel36.setText("Tipo de Gasolina");
+        pnCrudVehiculos.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 93, 25));
 
         jLabel37.setText("Descuento");
+        pnCrudVehiculos.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 430, 81, 25));
 
         cboDescuento.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0%", "10%", "25%", "50%", "75%" }));
         cboDescuento.addActionListener(new java.awt.event.ActionListener() {
@@ -1067,69 +1160,20 @@ public class si extends javax.swing.JFrame {
                 cboDescuentoActionPerformed(evt);
             }
         });
+        pnCrudVehiculos.add(cboDescuento, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 430, 96, -1));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel42, javax.swing.GroupLayout.DEFAULT_SIZE, 240, Short.MAX_VALUE)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(87, 87, 87)
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(txtModelo)
-                    .addComponent(txtVariante)
-                    .addComponent(txtAnio)
-                    .addComponent(txtColor)
-                    .addComponent(txtKilometraje)
-                    .addComponent(txtPrecio))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel36, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(24, 24, 24)))
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(cboDescuento, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(cboGasolina, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(39, 39, 39))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(txtModelo, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtVariante, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtAnio, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtColor, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtKilometraje, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(23, 23, 23)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cboGasolina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cboDescuento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
-        );
+        jLabel38.setText("Tenencia");
+        pnCrudVehiculos.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 370, 99, 25));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 160, 240, 480));
+        cboTenencia.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pagada", "Adeudo" }));
+        cboTenencia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cboTenenciaActionPerformed(evt);
+            }
+        });
+        pnCrudVehiculos.add(cboTenencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 370, 96, -1));
+
+        jPanel2.add(pnCrudVehiculos, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, -1, 480));
 
         jScrollPane4.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jScrollPane4.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -1167,63 +1211,141 @@ public class si extends javax.swing.JFrame {
         });
         jScrollPane4.setViewportView(TablaVehiculos);
 
-        jPanel1.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 180, 870, 240));
+        jPanel2.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(369, 49, 870, 240));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Hecho con ♥");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 0, 1280, 40));
+        jLabel39.setText("Dia");
+        jPanel2.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 530, 30, 25));
 
-        btnVenta.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        btnVenta.setForeground(new java.awt.Color(25, 25, 25));
-        btnVenta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/new-car.png"))); // NOI18N
-        btnVenta.setText(" Vender");
-        btnVenta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnVenta.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnVentaMouseClicked(evt);
+        cboDia.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1  ", "2  ", "3  ", "4  ", "5  ", "6  ", "7  ", "8  ", "9  ", "10  ", "11  ", "12  ", "13  ", "14  ", "15  ", "16  ", "17  ", "18  ", "19  ", "20  ", "21  ", "22  ", "23  ", "24  ", "25  ", "26  ", "27  ", "28  ", "29  ", "30  ", "31" }));
+        cboDia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cboDiaActionPerformed(evt);
             }
         });
-        jPanel1.add(btnVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 530, 120, 60));
+        jPanel2.add(cboDia, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 530, 96, -1));
 
-        btnDocumentacionC.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        btnDocumentacionC.setForeground(new java.awt.Color(25, 25, 25));
-        btnDocumentacionC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/search.png"))); // NOI18N
-        btnDocumentacionC.setText("  Consultar Documentacion");
-        btnDocumentacionC.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnDocumentacionC.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnDocumentacionCMouseClicked(evt);
+        jLabel40.setText("Mes");
+        jPanel2.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 530, 30, 25));
+
+        cboMes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Enero  ", "Febrero  ", "Marzo  ", "Abril  ", "Mayo  ", "Junio  ", "Julio  ", "Agosto  ", "Septiembre  ", "Octubre  ", "Noviembre  ", "Diciembre  " }));
+        cboMes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cboMesActionPerformed(evt);
             }
         });
-        jPanel1.add(btnDocumentacionC, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 530, 270, 60));
+        jPanel2.add(cboMes, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 530, 96, -1));
 
-        btnAgregar.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        btnAgregar.setForeground(new java.awt.Color(25, 25, 25));
-        btnAgregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/rental-car.png"))); // NOI18N
-        btnAgregar.setText("  Agregar");
-        btnAgregar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(btnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 530, 130, 60));
-
-        btnDocumentacion.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        btnDocumentacion.setForeground(new java.awt.Color(25, 25, 25));
-        btnDocumentacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/checklist.png"))); // NOI18N
-        btnDocumentacion.setText("  Agregar Documentacion");
-        btnDocumentacion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnDocumentacion.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnDocumentacionMouseClicked(evt);
+        cboAnio.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2024  ", "2023  ", "2022  ", "2021  ", "2020  ", "2019  ", "2018  ", "2017  ", "2016  ", "2015  ", "2014  ", "2013  ", "2012  ", "2011  ", "2010  ", "2009  ", "2008  ", "2007  ", "2006  ", "2005  ", "2004  ", "2003  ", "2002  ", "2001  ", "2000  ", "1999  ", "1998  ", "1997  ", "1996  ", "1995" }));
+        cboAnio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cboAnioActionPerformed(evt);
             }
         });
-        jPanel1.add(btnDocumentacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 640, 270, 60));
+        jPanel2.add(cboAnio, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 530, 96, -1));
 
-        btnEditar.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        btnEditar.setForeground(new java.awt.Color(25, 25, 25));
-        btnEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/mechanical.png"))); // NOI18N
-        btnEditar.setText(" Editar");
-        btnEditar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(btnEditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 530, 100, 60));
+        jLabel41.setText("Año");
+        jPanel2.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 530, 30, 25));
+
+        jLabel45.setBackground(new java.awt.Color(25, 25, 25));
+        jLabel45.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel45.setForeground(new java.awt.Color(25, 25, 25));
+        jLabel45.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/calendar.png"))); // NOI18N
+        jLabel45.setText(" Fecha de Compra");
+        jPanel2.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 520, 180, 40));
+
+        PLVehiculos.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1300, 590));
+
+        PNVentanas.addTab("tab1", PLVehiculos);
+
+        jPanel7.setBackground(new java.awt.Color(255, 255, 255));
+
+        jScrollPane7.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jScrollPane7.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+
+        TablaTenencias.setAutoCreateRowSorter(true);
+        TablaTenencias.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String [] {
+                "Id", "Modelo", "Tenencia Vencida"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, true
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        TablaTenencias.setGridColor(new java.awt.Color(255, 255, 255));
+        TablaTenencias.setSelectionBackground(new java.awt.Color(75, 75, 75));
+        TablaTenencias.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TablaTenenciasMouseClicked(evt);
+            }
+        });
+        jScrollPane7.setViewportView(TablaTenencias);
+
+        jButton2.setText("Actualizar Tenencia");
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGap(211, 211, 211)
+                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 841, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGap(491, 491, 491)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(248, Short.MAX_VALUE))
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(113, 113, 113)
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(65, 65, 65)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(143, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout PLTenencias_2Layout = new javax.swing.GroupLayout(PLTenencias_2);
+        PLTenencias_2.setLayout(PLTenencias_2Layout);
+        PLTenencias_2Layout.setHorizontalGroup(
+            PLTenencias_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        PLTenencias_2Layout.setVerticalGroup(
+            PLTenencias_2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PLTenencias_2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        PNVentanas.addTab("tab2", PLTenencias_2);
+
+        jPanel1.add(PNVentanas, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 110, 1300, 620));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1580, 730));
 
@@ -1266,102 +1388,14 @@ public class si extends javax.swing.JFrame {
     }//GEN-LAST:event_PLautosMouseExited
 
     private void PLautosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PLautosMouseClicked
-        // TODO add your handling code here:
-        ;
+        PNVentanas.setSelectedIndex(0);
+        lblSaludito.setText("Vehiculos");
     }//GEN-LAST:event_PLautosMouseClicked
 
     private void PLautosMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PLautosMouseMoved
         // TODO add your handling code here:
         PLautos.setBackground(new Color(60,60,60));
     }//GEN-LAST:event_PLautosMouseMoved
-
-    private void TablaVehiculosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TablaVehiculosMouseClicked
-
-        
-
-    }//GEN-LAST:event_TablaVehiculosMouseClicked
-
-    private void txtModeloMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtModeloMouseClicked
-        // TODO add your handling code here:
-        
-    }//GEN-LAST:event_txtModeloMouseClicked
-
-    private void txtModeloKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtModeloKeyTyped
-        // TODO add your handling code here:}
-        char c = evt.getKeyChar();
-
-        if(Character.isDigit(c)){
-            evt.consume();
-        }
-    }//GEN-LAST:event_txtModeloKeyTyped
-
-    private void txtVarianteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtVarianteMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtVarianteMouseClicked
-
-    private void txtVarianteKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtVarianteKeyTyped
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtVarianteKeyTyped
-
-    private void txtVarianteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtVarianteActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtVarianteActionPerformed
-
-    private void txtAnioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtAnioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtAnioMouseClicked
-
-    private void txtAnioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAnioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtAnioActionPerformed
-
-    private void txtAnioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtAnioKeyTyped
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtAnioKeyTyped
-
-    private void txtColorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtColorMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtColorMouseClicked
-
-    private void txtColorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtColorActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtColorActionPerformed
-
-    private void txtColorKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtColorKeyTyped
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtColorKeyTyped
-
-    private void txtKilometrajeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtKilometrajeMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtKilometrajeMouseClicked
-
-    private void txtKilometrajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtKilometrajeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtKilometrajeActionPerformed
-
-    private void txtKilometrajeKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtKilometrajeKeyTyped
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtKilometrajeKeyTyped
-
-    private void txtPrecioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtPrecioMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtPrecioMouseClicked
-
-    private void txtPrecioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPrecioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtPrecioActionPerformed
-
-    private void txtPrecioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPrecioKeyTyped
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtPrecioKeyTyped
-
-    private void cboGasolinaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboGasolinaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cboGasolinaActionPerformed
-
-    private void cboDescuentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboDescuentoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cboDescuentoActionPerformed
 
     private void TablaClientesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TablaClientesMouseClicked
         // TODO add your handling code here:
@@ -1443,20 +1477,6 @@ public class si extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_TablaClientes1MouseClicked
 
-    private void btnDocumentacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDocumentacionMouseClicked
-        JAgragar_Documentacion.setSize(390,590);
-        JAgragar_Documentacion.setLocationRelativeTo(null);
-
-        JAgragar_Documentacion.setVisible(rootPaneCheckingEnabled);
-         
-    }//GEN-LAST:event_btnDocumentacionMouseClicked
-
-    private void btnDocumentacionCMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDocumentacionCMouseClicked
-        JConsulta_Documentacion.setSize(440,590);
-        JConsulta_Documentacion.setLocationRelativeTo(null);
-        JConsulta_Documentacion.setVisible(rootPaneCheckingEnabled);
-    }//GEN-LAST:event_btnDocumentacionCMouseClicked
-
     private void btnFacturaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFacturaMouseClicked
         new saveImage().selectImage("Factura", 1); // Añadir getIDCarro()
     }//GEN-LAST:event_btnFacturaMouseClicked
@@ -1523,6 +1543,19 @@ public class si extends javax.swing.JFrame {
         } catch (Exception e) {
         }    }//GEN-LAST:event_btnFactura_CMouseClicked
 
+    private void PLTenenciasMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PLTenenciasMouseMoved
+        PLTenencias.setBackground(new Color(60,60,60));
+    }//GEN-LAST:event_PLTenenciasMouseMoved
+
+    private void PLTenenciasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PLTenenciasMouseClicked
+        PNVentanas.setSelectedIndex(1);
+        lblSaludito.setText("Tenencias Vencidas");
+    }//GEN-LAST:event_PLTenenciasMouseClicked
+
+    private void PLTenenciasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PLTenenciasMouseExited
+        PLTenencias.setBackground(new Color(40,40,40));
+    }//GEN-LAST:event_PLTenenciasMouseExited
+
     private void btnVentaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVentaMouseClicked
         JVentas.setSize(1269,637);
         JVentas.setLocationRelativeTo(null);
@@ -1530,21 +1563,124 @@ public class si extends javax.swing.JFrame {
         JVentas.setVisible(rootPaneCheckingEnabled);
     }//GEN-LAST:event_btnVentaMouseClicked
 
-    private void PLTenenciasMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PLTenenciasMouseMoved
-        PLTenencias.setBackground(new Color(60,60,60));
-    }//GEN-LAST:event_PLTenenciasMouseMoved
+    private void btnDocumentacionCMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDocumentacionCMouseClicked
+        JConsulta_Documentacion.setSize(440,590);
+        JConsulta_Documentacion.setLocationRelativeTo(null);
+        JConsulta_Documentacion.setVisible(rootPaneCheckingEnabled);
+    }//GEN-LAST:event_btnDocumentacionCMouseClicked
 
-    private void PLTenenciasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PLTenenciasMouseClicked
+    private void btnDocumentacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDocumentacionMouseClicked
+        JAgragar_Documentacion.setSize(390,590);
+        JAgragar_Documentacion.setLocationRelativeTo(null);
+
+        JAgragar_Documentacion.setVisible(rootPaneCheckingEnabled);
+    }//GEN-LAST:event_btnDocumentacionMouseClicked
+
+    private void txtModeloMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtModeloMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_PLTenenciasMouseClicked
+    }//GEN-LAST:event_txtModeloMouseClicked
 
-    private void PLTenenciasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PLTenenciasMouseExited
-        PLTenencias.setBackground(new Color(40,40,40));
-    }//GEN-LAST:event_PLTenenciasMouseExited
+    private void txtModeloKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtModeloKeyTyped
+        // TODO add your handling code here:}
+        char c = evt.getKeyChar();
 
-    /**
-     * @param args the command line arguments
-     */
+        if(Character.isDigit(c)){
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtModeloKeyTyped
+
+    private void txtVarianteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtVarianteMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtVarianteMouseClicked
+
+    private void txtVarianteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtVarianteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtVarianteActionPerformed
+
+    private void txtVarianteKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtVarianteKeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtVarianteKeyTyped
+
+    private void txtAnioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtAnioMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAnioMouseClicked
+
+    private void txtAnioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAnioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAnioActionPerformed
+
+    private void txtAnioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtAnioKeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAnioKeyTyped
+
+    private void txtColorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtColorMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtColorMouseClicked
+
+    private void txtColorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtColorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtColorActionPerformed
+
+    private void txtColorKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtColorKeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtColorKeyTyped
+
+    private void txtKilometrajeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtKilometrajeMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtKilometrajeMouseClicked
+
+    private void txtKilometrajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtKilometrajeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtKilometrajeActionPerformed
+
+    private void txtKilometrajeKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtKilometrajeKeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtKilometrajeKeyTyped
+
+    private void txtPrecioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtPrecioMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPrecioMouseClicked
+
+    private void txtPrecioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPrecioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPrecioActionPerformed
+
+    private void txtPrecioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPrecioKeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPrecioKeyTyped
+
+    private void cboGasolinaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboGasolinaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cboGasolinaActionPerformed
+
+    private void cboDescuentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboDescuentoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cboDescuentoActionPerformed
+
+    private void TablaVehiculosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TablaVehiculosMouseClicked
+
+    }//GEN-LAST:event_TablaVehiculosMouseClicked
+
+    private void TablaTenenciasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TablaTenenciasMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TablaTenenciasMouseClicked
+
+    private void cboTenenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboTenenciaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cboTenenciaActionPerformed
+
+    private void cboDiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboDiaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cboDiaActionPerformed
+
+    private void cboMesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboMesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cboMesActionPerformed
+
+    private void cboAnioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboAnioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cboAnioActionPerformed
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -1585,9 +1721,12 @@ public class si extends javax.swing.JFrame {
     private javax.swing.JDialog JRegistroCliente;
     private javax.swing.JDialog JVentas;
     private javax.swing.JPanel PLTenencias;
+    private javax.swing.JPanel PLTenencias_2;
+    private javax.swing.JPanel PLVehiculos;
     private javax.swing.JPanel PLautos;
     private javax.swing.JPanel PLsalir;
     private javax.swing.JPanel PLusuario;
+    private javax.swing.JTabbedPane PNVentanas;
     private javax.swing.JPanel PanelLateral;
     private javax.swing.JPanel PanelSaludo;
     private javax.swing.JPanel PanelSaludo1;
@@ -1596,6 +1735,7 @@ public class si extends javax.swing.JFrame {
     private javax.swing.JPanel PanelSaludo4;
     public javax.swing.JTable TablaClientes;
     public javax.swing.JTable TablaClientes1;
+    public javax.swing.JTable TablaTenencias;
     public javax.swing.JTable TablaVehiculos;
     private javax.swing.JLabel btnAgregar;
     private javax.swing.JLabel btnAgregarCliente;
@@ -1619,8 +1759,13 @@ public class si extends javax.swing.JFrame {
     private javax.swing.JLabel btnTenencia_C;
     private javax.swing.JLabel btnVenta;
     private javax.swing.JLabel btnVentaA;
+    private javax.swing.JComboBox<String> cboAnio;
     private javax.swing.JComboBox<String> cboDescuento;
+    private javax.swing.JComboBox<String> cboDia;
     private javax.swing.JComboBox<String> cboGasolina;
+    private javax.swing.JComboBox<String> cboMes;
+    private javax.swing.JComboBox<String> cboTenencia;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
@@ -1635,9 +1780,14 @@ public class si extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel60;
@@ -1650,9 +1800,11 @@ public class si extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JLabel lblCLN;
     private javax.swing.JLabel lblIngresos;
     private javax.swing.JLabel lblNombreA;
@@ -1665,11 +1817,12 @@ public class si extends javax.swing.JFrame {
     private javax.swing.JLabel lblNombreA8;
     private javax.swing.JLabel lblPromedio;
     private javax.swing.JLabel lblPromedio1;
-    private javax.swing.JLabel lblTextoMorado;
+    private javax.swing.JLabel lblSaludito;
     private javax.swing.JLabel lblTextoMorado1;
     private javax.swing.JLabel lblTextoMorado2;
     private javax.swing.JLabel lblTextoMorado3;
     private javax.swing.JLabel lblTextoMorado4;
+    private javax.swing.JPanel pnCrudVehiculos;
     private javax.swing.JTextField txtAmaterno;
     private javax.swing.JTextField txtAnio;
     private javax.swing.JTextField txtApaterno;
