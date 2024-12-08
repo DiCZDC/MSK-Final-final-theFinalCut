@@ -1,5 +1,6 @@
 
 package TUNAME;
+import TUNAME.LOGIN_1;
 //import Controlador.Metodos;
 import java.awt.Color;
 import javax.swing.JOptionPane;
@@ -99,7 +100,7 @@ public class LOGIN_1 extends javax.swing.JFrame {
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Correo:");
+        jLabel5.setText("Usuario:");
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 123, 341, -1));
 
         txtCorreo.setFont(txtCorreo.getFont().deriveFont(txtCorreo.getFont().getSize()+2f));
@@ -205,12 +206,26 @@ public class LOGIN_1 extends javax.swing.JFrame {
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
         String correo = txtCorreo.getText().trim(); // Suponiendo que tienes un campo de texto para el correo
         String contraseña = new String(txtContraseña.getPassword()).trim(); // Obtener la contraseña del JPasswordField y convertirla a String
+        
         if(correo.isEmpty() || contraseña.isEmpty()){
             JOptionPane.showMessageDialog(this, "Por favor, llene todos los campos.", "Campos vacíos", JOptionPane.ERROR_MESSAGE);
         }else{
-            
+        limpiarCampos(); 
+        } 
         
-        limpiarCampos();
+        String admin = "admin";    
+        String contra = "1234";   
+        
+        if (correo.equals(admin) && contraseña.equals(contra)){
+        
+            this.dispose();
+            Vehiculos main = new Vehiculos();
+            main.setVisible(true);
+            
+            
+        }else {
+        
+           JOptionPane.showMessageDialog(this, "Credenciales incorrectas", "Error de sesion", JOptionPane.ERROR_MESSAGE); 
         
         }
        
