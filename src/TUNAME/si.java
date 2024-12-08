@@ -19,9 +19,6 @@ public class si extends javax.swing.JFrame {
      */
     public si() {
         initComponents();
-        
-        
-       
     }
 
     /**
@@ -143,13 +140,8 @@ public class si extends javax.swing.JFrame {
         cboTenencia = new javax.swing.JComboBox<>();
         jScrollPane4 = new javax.swing.JScrollPane();
         TablaVehiculos = new javax.swing.JTable();
-        jLabel39 = new javax.swing.JLabel();
-        cboDia = new javax.swing.JComboBox<>();
-        jLabel40 = new javax.swing.JLabel();
-        cboMes = new javax.swing.JComboBox<>();
-        cboAnio = new javax.swing.JComboBox<>();
-        jLabel41 = new javax.swing.JLabel();
         jLabel45 = new javax.swing.JLabel();
+        panelCalendario1 = new TUNAME.panelCalendario();
         PLTenencias_2 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
         jScrollPane7 = new javax.swing.JScrollPane();
@@ -997,7 +989,7 @@ public class si extends javax.swing.JFrame {
                 btnDocumentacionMouseClicked(evt);
             }
         });
-        jPanel2.add(btnDocumentacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 500, 270, 60));
+        jPanel2.add(btnDocumentacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 510, 270, 60));
 
         btnEditar.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnEditar.setForeground(new java.awt.Color(25, 25, 25));
@@ -1213,39 +1205,6 @@ public class si extends javax.swing.JFrame {
 
         jPanel2.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(369, 49, 870, 240));
 
-        jLabel39.setText("Dia");
-        jPanel2.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 530, 30, 25));
-
-        cboDia.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1  ", "2  ", "3  ", "4  ", "5  ", "6  ", "7  ", "8  ", "9  ", "10  ", "11  ", "12  ", "13  ", "14  ", "15  ", "16  ", "17  ", "18  ", "19  ", "20  ", "21  ", "22  ", "23  ", "24  ", "25  ", "26  ", "27  ", "28  ", "29  ", "30  ", "31" }));
-        cboDia.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cboDiaActionPerformed(evt);
-            }
-        });
-        jPanel2.add(cboDia, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 530, 96, -1));
-
-        jLabel40.setText("Mes");
-        jPanel2.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 530, 30, 25));
-
-        cboMes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Enero  ", "Febrero  ", "Marzo  ", "Abril  ", "Mayo  ", "Junio  ", "Julio  ", "Agosto  ", "Septiembre  ", "Octubre  ", "Noviembre  ", "Diciembre  " }));
-        cboMes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cboMesActionPerformed(evt);
-            }
-        });
-        jPanel2.add(cboMes, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 530, 96, -1));
-
-        cboAnio.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2024  ", "2023  ", "2022  ", "2021  ", "2020  ", "2019  ", "2018  ", "2017  ", "2016  ", "2015  ", "2014  ", "2013  ", "2012  ", "2011  ", "2010  ", "2009  ", "2008  ", "2007  ", "2006  ", "2005  ", "2004  ", "2003  ", "2002  ", "2001  ", "2000  ", "1999  ", "1998  ", "1997  ", "1996  ", "1995" }));
-        cboAnio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cboAnioActionPerformed(evt);
-            }
-        });
-        jPanel2.add(cboAnio, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 530, 96, -1));
-
-        jLabel41.setText("Año");
-        jPanel2.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 530, 30, 25));
-
         jLabel45.setBackground(new java.awt.Color(25, 25, 25));
         jLabel45.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel45.setForeground(new java.awt.Color(25, 25, 25));
@@ -1253,6 +1212,7 @@ public class si extends javax.swing.JFrame {
         jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGENES/calendar.png"))); // NOI18N
         jLabel45.setText(" Fecha de Compra");
         jPanel2.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 520, 180, 40));
+        jPanel2.add(panelCalendario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 530, -1, -1));
 
         PLVehiculos.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1300, 590));
 
@@ -1669,18 +1629,6 @@ public class si extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cboTenenciaActionPerformed
 
-    private void cboDiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboDiaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cboDiaActionPerformed
-
-    private void cboMesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboMesActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cboMesActionPerformed
-
-    private void cboAnioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboAnioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cboAnioActionPerformed
-
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -1759,11 +1707,8 @@ public class si extends javax.swing.JFrame {
     private javax.swing.JLabel btnTenencia_C;
     private javax.swing.JLabel btnVenta;
     private javax.swing.JLabel btnVentaA;
-    private javax.swing.JComboBox<String> cboAnio;
     private javax.swing.JComboBox<String> cboDescuento;
-    private javax.swing.JComboBox<String> cboDia;
     private javax.swing.JComboBox<String> cboGasolina;
-    private javax.swing.JComboBox<String> cboMes;
     private javax.swing.JComboBox<String> cboTenencia;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
@@ -1781,9 +1726,6 @@ public class si extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel40;
-    private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
@@ -1822,6 +1764,7 @@ public class si extends javax.swing.JFrame {
     private javax.swing.JLabel lblTextoMorado2;
     private javax.swing.JLabel lblTextoMorado3;
     private javax.swing.JLabel lblTextoMorado4;
+    private TUNAME.panelCalendario panelCalendario1;
     private javax.swing.JPanel pnCrudVehiculos;
     private javax.swing.JTextField txtAmaterno;
     private javax.swing.JTextField txtAnio;
