@@ -12,6 +12,13 @@ public class prueba {
     public static void main(String[] args) {
         controladorVehiculos cv = new controladorVehiculos();
         cv.ActualizarVehiculos();
+        for (int i=0;i<cv.getVehiculos().size();i++) {
+      
+            System.out.println(cv.getVehiculos().get(i).getModelo());
+        }
+       
+        
+        
         
     }
 }

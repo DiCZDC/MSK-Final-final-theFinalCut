@@ -105,6 +105,9 @@ public class controladorVehiculos {
         }
     }
     
+    public ArrayList<Vehiculo> getVehiculos(){
+        return vehiculos;
+    }
     
     
 }
