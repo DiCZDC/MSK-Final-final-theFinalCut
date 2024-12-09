@@ -1300,9 +1300,12 @@ public class Vehiculos extends javax.swing.JFrame {
         // TODO add your handling code here:
         PLautos.setBackground(new Color(60,60,60));
     }//GEN-LAST:event_PLautosMouseMoved
-
+    private int selectedRow_TVehiculos(){
+        return Integer.parseInt(TablaVehiculos.getValueAt(TablaVehiculos.getSelectedRow(), 0).toString());
+    }
     private void btnFacturaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFacturaMouseClicked
-        new saveImage().selectImage("Factura", 1); // Añadir getIDCarro()
+        //tablaVentas.getValueAt(tablaVentas.getSelectedRow(),0).toString()
+        new saveImage().selectImage("Factura",selectedRow_TVehiculos()); // Añadir getIDCarro()
     }//GEN-LAST:event_btnFacturaMouseClicked
 
     private void btnTenenciaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnTenenciaMouseClicked
@@ -1594,22 +1597,22 @@ public class Vehiculos extends javax.swing.JFrame {
     }
     private void updateTablaTenencias(){
         contVeh.ActualizarVehiculos();
-        DefaultTableModel modelo2 = new DefaultTableModel();
+        DefaultTableModel modelo = new DefaultTableModel();
         
         String [] cabecera = {"ID Vehiculo","Modelo","Tenencia"};
         
         for (String i : cabecera)
-            modelo2.addColumn(i);
+            modelo.addColumn(i);
         
-        TablaTenencias.setModel(modelo2);
-        
+        TablaTenencias.setModel(modelo);
         for(Vehiculo i: contVeh.getVehiculos()){
             String [] actVal ={String.valueOf(i.getId_vehiculo()),i.getModelo(),Boolean.toString(i.getTenencia())};
             if(!i.getTenencia())
-                modelo2.addRow(actVal);
+                modelo.addRow(actVal);
         }
         
     }
+    
     
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
