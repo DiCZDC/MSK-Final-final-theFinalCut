@@ -2,9 +2,11 @@
 package TUNAME;
 import Metodos.saveImage;
 import Metodos.openImage;
-import TUNAME.LOGIN_1;
-
+import TUNAME.*;
+import CLASES.*;
 import java.awt.Color;
+import java.util.ArrayList;
+import javax.swing.table.DefaultTableModel;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -23,8 +25,11 @@ public class Vehiculos extends javax.swing.JFrame {
     /**
      * Creates new form si
      */
+    controladorVehiculos contVeh = new controladorVehiculos();
     public Vehiculos() {
         initComponents();
+        updateTablaVehiculos();
+
     }
 
     /**
@@ -1369,6 +1374,7 @@ public class Vehiculos extends javax.swing.JFrame {
     private void PLTenenciasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PLTenenciasMouseClicked
         PNVentanas.setSelectedIndex(1);
         lblSaludito.setText("Tenencias Vencidas");
+        updateTablaTenencias();
     }//GEN-LAST:event_PLTenenciasMouseClicked
 
     private void PLTenenciasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PLTenenciasMouseExited
@@ -1567,7 +1573,43 @@ public class Vehiculos extends javax.swing.JFrame {
     private void btnCancelarVMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCancelarVMouseClicked
        JVentas.dispose();
     }//GEN-LAST:event_btnCancelarVMouseClicked
-
+    
+    private void updateTablaVehiculos(){
+        contVeh.ActualizarVehiculos();
+        DefaultTableModel modelo = new DefaultTableModel();
+        
+        String [] cabecera = {"ID Vehiculo","Modelo","Variante","Año","Precio de compra","Kilometraje","Tipo de Gasolina","Precio de venta"};
+        
+        for (String i : cabecera)
+            modelo.addColumn(i);
+        
+        TablaVehiculos.setModel(modelo);
+        
+        for(Vehiculo i: contVeh.getVehiculos()){
+            String [] actVal ={String.valueOf(i.getId_vehiculo()),i.getModelo(),i.getVariante(),String.valueOf(i.getAnio()),Double.toString(i.getPrecio_compra()),Long.toString(i.getKilometraje()),i.getTipo_gasolina(),Double.toString(i.getPrecio_venta())};
+            System.out.println(actVal);
+            modelo.addRow(actVal);
+        }
+        
+    }
+    private void updateTablaTenencias(){
+        contVeh.ActualizarVehiculos();
+        DefaultTableModel modelo2 = new DefaultTableModel();
+        
+        String [] cabecera = {"ID Vehiculo","Modelo","Tenencia"};
+        
+        for (String i : cabecera)
+            modelo2.addColumn(i);
+        
+        TablaTenencias.setModel(modelo2);
+        
+        for(Vehiculo i: contVeh.getVehiculos()){
+            String [] actVal ={String.valueOf(i.getId_vehiculo()),i.getModelo(),Boolean.toString(i.getTenencia())};
+            if(!i.getTenencia())
+                modelo2.addRow(actVal);
+        }
+        
+    }
     
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
