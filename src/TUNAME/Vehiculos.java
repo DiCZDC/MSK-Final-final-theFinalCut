@@ -718,6 +718,8 @@ public class Vehiculos extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
         setIconImages(null);
+        setMinimumSize(new java.awt.Dimension(1800, 750));
+        setPreferredSize(new java.awt.Dimension(1800, 750));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -1622,7 +1624,7 @@ public class Vehiculos extends javax.swing.JFrame {
     private javax.swing.JPanel PanelSaludo2;
     private javax.swing.JPanel PanelSaludo3;
     private javax.swing.JPanel PanelSaludo4;
-    private javax.swing.JTable TablaClientes1;
+    public javax.swing.JTable TablaClientes1;
     public javax.swing.JTable TablaTenencias;
     public javax.swing.JTable TablaVehiculos;
     private javax.swing.JLabel btnAgregar;
