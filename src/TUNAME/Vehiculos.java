@@ -1305,7 +1305,8 @@ public class Vehiculos extends javax.swing.JFrame {
     }
     private void btnFacturaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnFacturaMouseClicked
         //tablaVentas.getValueAt(tablaVentas.getSelectedRow(),0).toString()
-        new saveImage().selectImage("Factura",selectedRow_TVehiculos()); // Añadir getIDCarro()
+        new saveImage().selectImage("Factura",1); // Añadir getIDCarro()
+        System.out.println(TablaVehiculos.getValueAt(TablaVehiculos.getSelectedRow(), 0).toString());
     }//GEN-LAST:event_btnFacturaMouseClicked
 
     private void btnTenenciaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnTenenciaMouseClicked
