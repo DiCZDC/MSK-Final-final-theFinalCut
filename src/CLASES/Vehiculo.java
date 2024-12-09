@@ -114,7 +114,9 @@ public class Vehiculo{
         this.variante = variante;
     }
     
-    
+    public boolean getTenencia(){
+        return tenencia;
+    }
     
 }
 
